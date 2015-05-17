@@ -1,0 +1,15 @@
+{
+  "name": "maki-passport-soundcloud",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Martindale",
+  "license": "MIT",
+  "dependencies": {
+    "passport": "^0.2.1",
+    "passport-soundcloud": "^0.1.2"
+  }
+}
