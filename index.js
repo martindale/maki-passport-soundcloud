@@ -71,7 +71,9 @@ function PassportSoundcloud( config ) {
             });
           }
 
-          maki.app.get('/auth/soundcloud', maki.passport.authenticate('soundcloud') );
+          maki.app.get('/auth/soundcloud', maki.passport.authenticate('soundcloud', {
+            scope: 'non-expiring'
+          }) );
           maki.app.get('/auth/soundcloud/callback', maki.passport.authenticate('soundcloud'), function(req, res) {
             return res.redirect('/');
           });
